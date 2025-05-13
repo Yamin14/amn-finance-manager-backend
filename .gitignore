@@ -1,1 +1,17 @@
+# Ignore environment variables
 .env
+.env.local
+.env.*.local
+
+# dependencies
+/node_modules
+
+# production
+/dist
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.*.local
+.vscode
