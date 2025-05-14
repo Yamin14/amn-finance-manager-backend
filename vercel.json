@@ -10,6 +10,9 @@
         {
             "src": "/(.*)",
             "dest": "index.js",
+            "headers": {
+                "access-control-allow-origin": "*"
+            },
             "methods": [
                 "GET",
                 "POST",
@@ -17,18 +20,6 @@
                 "DELETE",
                 "PATCH",
                 "OPTIONS"
-            ]
-        }
-    ],
-    "headers": [
-        {
-            "source": "/(.*)",
-            "headers": [
-                {
-                    "Access-Control-Allow-Origin": "https://amn-finance-manager.vercel.app",
-                    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-                    "Access-Control-Allow-Headers": "Content-Type, Authorization"
-                }
             ]
         }
     ]
