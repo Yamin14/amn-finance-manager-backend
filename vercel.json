@@ -10,9 +10,6 @@
         {
             "src": "/(.*)",
             "dest": "index.js",
-            "headers": {
-                "access-control-allow-origin": "*"
-            },
             "methods": [
                 "GET",
                 "POST",
@@ -20,7 +17,12 @@
                 "DELETE",
                 "PATCH",
                 "OPTIONS"
-            ]
+            ],
+            "headers": {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Credentials": "true",
+                "Access-Control-Allow-Headers": "Content-Type, Authorization"
+            }
         }
     ]
 }
